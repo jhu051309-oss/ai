@@ -7,7 +7,7 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 if 0: #not client:
     st.error("❌ OPENAI_API_KEY 환경변수가 설정되어 있지 않습니다.")
 else:
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
     st.title('단위 변환기...')
 
