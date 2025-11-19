@@ -1,13 +1,10 @@
 import streamlit as st
 from openai import OpenAI
-import os
 
-# 🔐 환경변수에서 API 키 불러오기
-# 터미널에서 아래처럼 설정해야 함:
-# export OPENAI_API_KEY="your_api_key"
-api_key = os.getenv("OPENAI_API_KEY")
+# --- API KEY ---
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-if not api_key:
+if 0: #not client:
     st.error("❌ OPENAI_API_KEY 환경변수가 설정되어 있지 않습니다.")
 else:
     client = OpenAI(api_key=api_key)
