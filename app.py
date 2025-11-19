@@ -9,7 +9,7 @@ if 0: #not client:
 else:
     client = OpenAI(api_key=api_key)
 
-    st.title('단위 변환기')
+    st.title('단위 변환기...')
 
     # 사용자 입력
     substance = st.text_input("단위를 변환하는 물질:")
