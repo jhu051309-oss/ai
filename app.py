@@ -13,7 +13,7 @@ else:
 
     # 사용자 입력
     substance = st.text_input("단위를 변환하는 물질:", value="물")
-    number = st.text_input("물질의 수:", value="1")
+    number = st.text_input("물질의 양:", value="1")
     first_unit = st.text_input("주어진 단위:", value="mol")
     converted_unit = st.text_input("변환될 단위:", value="g")
     # 입력이 모두 완료되면 API 요청
