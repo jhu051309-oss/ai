@@ -16,8 +16,6 @@ else:
     number = st.text_input("물질의 수:", value="1")
     first_unit = st.text_input("주어진 단위:", value="mol")
     converted_unit = st.text_input("변환될 단위:", value="g")
-    converted_unit = st.text_input("변환될 단위:")
-
     # 입력이 모두 완료되면 API 요청
     if substance and number and first_unit and converted_unit:
         prompt = f"물질 {substance} {number} {first_unit}을 {converted_unit}단위로 변환"
